@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PharmacySystem.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace PharmacySystem
         public Form1()
         {
             InitializeComponent();
+            Medicine m = new Medicine();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
