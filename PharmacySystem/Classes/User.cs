@@ -12,5 +12,7 @@ namespace PharmacySystem.Classes
         public string Name;
         public string Password;
         public bool IsAdmin;
+        int g;
+
     }
 }
