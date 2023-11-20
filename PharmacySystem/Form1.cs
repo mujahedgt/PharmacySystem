@@ -16,7 +16,6 @@ namespace PharmacySystem
         public Form1()
         {
             InitializeComponent();
-            Medicine m = new Medicine();
 
         }
 
