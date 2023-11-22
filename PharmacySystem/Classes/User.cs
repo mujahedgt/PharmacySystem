@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PharmacySystem.Classes
 {
@@ -12,5 +13,9 @@ namespace PharmacySystem.Classes
         public string Name;
         public string Password;
         public bool IsAdmin;
+    public User() {
+            IsAdmin = Convert.ToBoolean(0);
+            MessageBox.Show(IsAdmin.ToString());
+        }
     }
 }

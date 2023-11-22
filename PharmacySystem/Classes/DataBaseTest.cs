@@ -13,7 +13,13 @@ namespace PharmacySystem.Classes
     {
         public DataBaseTest() 
         {
-            String str = "server=DESKTOP-HS1LAF8;database=PharmacySystem;UID=sa;password=P@ss0wrd";
+            SqlCommand Comand (string com)
+            {
+                String str = "server=DESKTOP-HS1LAF8\\SQLEXPRESS;database=PharmacySystem;UID=sa;password=P@ss0wrd";
+                SqlConnection con = new SqlConnection(str);
+                SqlCommand cmd = new SqlCommand(com, con);
+                return cmd;
+            }
 
             String query = "select * from cars";
 
@@ -23,10 +29,13 @@ namespace PharmacySystem.Classes
 
             con.Open();
             cmd.ExecuteNonQuery();
-            string j = cmd.ExecuteReader().ToString();
+            SqlDataReader rdr = cmd.ExecuteReader();
+            rdr.Read();
+            string j = rdr[0].ToString();
+
             DataSet ds = new DataSet();
 
-            MessageBox.Show("connect with sql server");
+            MessageBox.Show(j);
 
             con.Close();
         }

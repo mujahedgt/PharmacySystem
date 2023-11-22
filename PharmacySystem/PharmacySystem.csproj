@@ -49,6 +49,7 @@
     <Compile Include="Classes\DataBaseTest.cs" />
     <Compile Include="Classes\Medicine.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="DataControls\UserData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,5 +87,6 @@
   <ItemGroup>
     <None Include="Resources\Screenshot 2023-11-22 204808.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

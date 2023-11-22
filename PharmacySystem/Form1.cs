@@ -17,6 +17,7 @@ namespace PharmacySystem
         {
             InitializeComponent();
             DataBaseTest dataBaseTest = new DataBaseTest();
+            User m = new User();
 
         }
 
