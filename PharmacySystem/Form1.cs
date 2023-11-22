@@ -16,6 +16,7 @@ namespace PharmacySystem
         public Form1()
         {
             InitializeComponent();
+            DataBaseTest dataBaseTest = new DataBaseTest();
 
         }
 
