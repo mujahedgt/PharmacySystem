@@ -9,13 +9,19 @@ namespace PharmacySystem.Classes
 {
     public class Medicine
     {
+        public int Id;
         public string ScientificName;
         public string BrandName;
         public double Price;
-        public int Dose;
-        public int Number;
+        public double Dose;
+        public int NumberInStore;
         public string Type;
         public Point RCPoint;
+        
+        public void setPoint(int x,int y)
+        {
+            RCPoint = new Point(x,y);
+        }
 
     }
 }

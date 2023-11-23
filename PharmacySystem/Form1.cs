@@ -19,10 +19,7 @@ namespace PharmacySystem
         public Form1()
         {
             InitializeComponent();
-        }
-        void btn_Click(string g)
-        {
-            MessageBox.Show("mujahed");
+            MedisineData.EmptyMedicines();
         }
         private void button1_Click(object sender, EventArgs e)
         {

@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Classes\Medicine.cs" />
     <Compile Include="Classes\User.cs" />
+    <Compile Include="DataControls\MedisineData.cs" />
     <Compile Include="DataControls\UserData.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
