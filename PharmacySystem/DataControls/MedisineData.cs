@@ -41,6 +41,20 @@ namespace PharmacySystem.DataControls
             con.Close();
             return list;
         }
+        public static List<string> ScientificResult()
+        {
+            List<string> list = new List<string>();
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand("SELECT DISTINCT ScientificName from medicine;", con);
+            con.Open();
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                list.Add(rdr.GetString(0));
+            }
+            con.Close();
+            return list;
+        }
         public static List<Medicine> BrandResearch(string Name)
         {
             List<Medicine> list = new List<Medicine>();
@@ -60,6 +74,20 @@ namespace PharmacySystem.DataControls
                 med.setPoint(Convert.ToInt32(rdr.GetValue(6)), Convert.ToInt32(rdr.GetValue(7)));
                 med.Dose = Convert.ToDouble(rdr.GetValue(8));
                 list.Add(med);
+            }
+            con.Close();
+            return list;
+        }
+        public static List<string> BrandResult()
+        {
+            List<string> list = new List<string>();
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand("SELECT DISTINCT BrandName from medicine;", con);
+            con.Open();
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                list.Add(rdr.GetString(0));
             }
             con.Close();
             return list;
@@ -122,7 +150,6 @@ namespace PharmacySystem.DataControls
                 return true;
             }
         }
-
         static public void DeleteMed(int Id)
         {
             SqlConnection con = sqlConnection();

@@ -19,7 +19,7 @@ namespace PharmacySystem
         public Form1()
         {
             InitializeComponent();
-            MedisineData.DeleteMed(2);
+            MedisineData.ScientificResult();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -58,6 +58,11 @@ namespace PharmacySystem
                     MessageBox.Show("Yous user name or passowrd is wrong");
                 }
             }
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
 
         }
     }
