@@ -19,7 +19,6 @@ namespace PharmacySystem
         public Form1()
         {
             InitializeComponent();
-            MedisineData.ScientificResult();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -32,7 +31,14 @@ namespace PharmacySystem
                 User m = UserData.IsUserExist(textBox2.Text, textBox1.Text);
                 if(m != null)
                 {
-                    MessageBox.Show("Hello " + m.Name);
+                    if (m.IsAdmin)
+                    {
+                        MessageBox.Show("Hello Admin " + m.Name);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Hello " + m.Name);
+                    }
                     //Button button = new Button();
                     //button.Name = m.Name;
                     //button.Size = new Size(100, 50);
@@ -58,11 +64,6 @@ namespace PharmacySystem
                     MessageBox.Show("Yous user name or passowrd is wrong");
                 }
             }
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
         }
     }
