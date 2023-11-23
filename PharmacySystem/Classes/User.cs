@@ -13,9 +13,5 @@ namespace PharmacySystem.Classes
         public string Name;
         public string Password;
         public bool IsAdmin;
-    public User() {
-            IsAdmin = Convert.ToBoolean(0);
-            MessageBox.Show(IsAdmin.ToString());
-        }
     }
 }

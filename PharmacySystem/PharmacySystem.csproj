@@ -46,7 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\DataBaseTest.cs" />
     <Compile Include="Classes\Medicine.cs" />
     <Compile Include="Classes\User.cs" />
     <Compile Include="DataControls\UserData.cs" />
