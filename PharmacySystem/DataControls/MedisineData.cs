@@ -122,5 +122,14 @@ namespace PharmacySystem.DataControls
                 return true;
             }
         }
+
+        static public void DeleteMed(int Id)
+        {
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand($"DELETE FROM medicine WHERE id={Id};", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+        }
     }
 }

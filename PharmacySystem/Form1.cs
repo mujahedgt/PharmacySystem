@@ -19,7 +19,7 @@ namespace PharmacySystem
         public Form1()
         {
             InitializeComponent();
-            MedisineData.EmptyMedicines();
+            MedisineData.DeleteMed(2);
         }
         private void button1_Click(object sender, EventArgs e)
         {
