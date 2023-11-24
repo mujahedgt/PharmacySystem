@@ -70,5 +70,10 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+            // it will display the final name 
+        }
     }
 }
