@@ -42,6 +42,8 @@
             this.button12 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button13 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -170,11 +172,30 @@
             this.button13.Text = "back";
             this.button13.UseVisualStyleBackColor = true;
             // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(43, 137);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(138, 225);
+            this.listBox1.TabIndex = 14;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(43, 381);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(109, 23);
+            this.button14.TabIndex = 15;
+            this.button14.Text = "delete";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button14);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button12);
@@ -212,5 +233,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button14;
     }
 }

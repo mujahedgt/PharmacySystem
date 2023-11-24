@@ -114,6 +114,8 @@
   <ItemGroup>
     <None Include="Resources\Screenshot 2023-11-22 204808.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\whrite-naton-in-image-for-a-logo-upscaled.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

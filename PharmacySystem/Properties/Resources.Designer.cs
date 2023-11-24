@@ -69,5 +69,15 @@ namespace PharmacySystem.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap whrite_naton_in_image_for_a_logo_upscaled {
+            get {
+                object obj = ResourceManager.GetObject("whrite-naton-in-image-for-a-logo-upscaled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
