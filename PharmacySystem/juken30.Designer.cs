@@ -37,38 +37,38 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(325, 12);
+            this.comboBox1.Location = new System.Drawing.Point(293, 128);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(183, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "Search";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(12, 12);
+            this.listBox1.Location = new System.Drawing.Point(272, 172);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(166, 303);
+            this.listBox1.Size = new System.Drawing.Size(241, 82);
             this.listBox1.TabIndex = 1;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(12, 391);
+            this.button1.Location = new System.Drawing.Point(272, 276);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 30);
+            this.button1.Size = new System.Drawing.Size(112, 30);
             this.button1.TabIndex = 2;
-            this.button1.Text = "delete";
+            this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(349, 391);
+            this.button2.Location = new System.Drawing.Point(404, 276);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(109, 30);
             this.button2.TabIndex = 3;
-            this.button2.Text = "button2";
+            this.button2.Text = "Proceed";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

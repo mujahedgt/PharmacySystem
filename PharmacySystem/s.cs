@@ -56,11 +56,6 @@ namespace WindowsFormsApp2
             // price
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            // discount percentage   ,, some of drugs have 0% discaout some have 10% or 15% 
-        }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
