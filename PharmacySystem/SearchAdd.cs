@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PharmacySystem
 {
-    public partial class juken30 : Form
+    public partial class SearchAdd : Form
     {
-        public juken30()
+        public SearchAdd()
         {
             InitializeComponent();
         }

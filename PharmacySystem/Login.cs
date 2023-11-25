@@ -14,9 +14,9 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace PharmacySystem
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     {
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }

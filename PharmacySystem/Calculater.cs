@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PharmacySystem
 {
-    public partial class Form2 : Form
+    public partial class Calculater : Form
     {
-        public Form2()
+        public Calculater()
         {
             InitializeComponent();
         }

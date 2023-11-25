@@ -1,6 +1,6 @@
 ﻿namespace PharmacySystem
 {
-    partial class juken30
+    partial class SearchAdd
     {
         /// <summary>
         /// Required designer variable.

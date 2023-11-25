@@ -1,6 +1,6 @@
 ﻿namespace PharmacySystem
 {
-    partial class Form2
+    partial class Calculater
     {
         /// <summary>
         /// Required designer variable.
