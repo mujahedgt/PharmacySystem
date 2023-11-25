@@ -37,52 +37,55 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(285, 148);
+            this.comboBox1.Location = new System.Drawing.Point(177, 14);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(183, 21);
+            this.comboBox1.Size = new System.Drawing.Size(414, 33);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.Text = "Search";
             // 
             // listBox1
             // 
+            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(264, 192);
+            this.listBox1.ItemHeight = 25;
+            this.listBox1.Location = new System.Drawing.Point(156, 58);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(241, 82);
+            this.listBox1.Size = new System.Drawing.Size(472, 229);
             this.listBox1.TabIndex = 1;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(264, 296);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(252, 293);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 30);
+            this.button1.Size = new System.Drawing.Size(125, 41);
             this.button1.TabIndex = 2;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(396, 296);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(384, 293);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(109, 30);
+            this.button2.Size = new System.Drawing.Size(122, 41);
             this.button2.TabIndex = 3;
             this.button2.Text = "Proceed";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(307, 415);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(308, 362);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(144, 23);
+            this.button3.Size = new System.Drawing.Size(160, 45);
             this.button3.TabIndex = 4;
             this.button3.Text = "Log Out";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // juken30
+            // SearchAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -92,9 +95,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "juken30";
+            this.Name = "SearchAdd";
             this.Text = "search and add screen";
-            this.Load += new System.EventHandler(this.juken30_Load);
             this.ResumeLayout(false);
 
         }

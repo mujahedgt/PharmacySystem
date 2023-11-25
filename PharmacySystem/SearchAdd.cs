@@ -16,26 +16,5 @@ namespace PharmacySystem
         {
             InitializeComponent();
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //when you select an item from the search bar it will drugged in here
-            // you can select to delete an item 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //the delete button 
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // to go to the calculater 
-        }
-
-        private void juken30_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
