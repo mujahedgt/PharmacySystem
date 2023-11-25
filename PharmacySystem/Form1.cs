@@ -20,15 +20,15 @@ namespace PharmacySystem
         {
             InitializeComponent();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnLogIn_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == ""||textBox2.Text=="")
+            if (TxtPassword.Text == ""||TxtUserName.Text=="")
             {
                 MessageBox.Show("Enter your user name and password");
             }
             else
             {
-                User m = UserData.IsUserExist(textBox2.Text, textBox1.Text);
+                User m = UserData.IsUserExist(TxtUserName.Text, TxtPassword.Text);
                 if(m != null)
                 {
                     if (m.IsAdmin)
@@ -64,11 +64,6 @@ namespace PharmacySystem
                     MessageBox.Show("Yous user name or passowrd is wrong");
                 }
             }
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
 
         }
     }
