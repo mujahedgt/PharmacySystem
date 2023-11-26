@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.BtnLogIn = new System.Windows.Forms.Button();
             this.TxtPassword = new System.Windows.Forms.TextBox();
             this.TxtUserName = new System.Windows.Forms.TextBox();
@@ -40,9 +41,10 @@
             // BtnLogIn
             // 
             this.BtnLogIn.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnLogIn.Location = new System.Drawing.Point(270, 387);
+            this.BtnLogIn.Location = new System.Drawing.Point(540, 744);
+            this.BtnLogIn.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnLogIn.Name = "BtnLogIn";
-            this.BtnLogIn.Size = new System.Drawing.Size(201, 43);
+            this.BtnLogIn.Size = new System.Drawing.Size(402, 83);
             this.BtnLogIn.TabIndex = 0;
             this.BtnLogIn.Text = "Log In ";
             this.BtnLogIn.UseVisualStyleBackColor = true;
@@ -51,18 +53,20 @@
             // TxtPassword
             // 
             this.TxtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPassword.Location = new System.Drawing.Point(326, 316);
+            this.TxtPassword.Location = new System.Drawing.Point(652, 608);
+            this.TxtPassword.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TxtPassword.Name = "TxtPassword";
-            this.TxtPassword.Size = new System.Drawing.Size(179, 29);
+            this.TxtPassword.Size = new System.Drawing.Size(354, 51);
             this.TxtPassword.TabIndex = 1;
             this.TxtPassword.UseSystemPasswordChar = true;
             // 
             // TxtUserName
             // 
             this.TxtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtUserName.Location = new System.Drawing.Point(326, 250);
+            this.TxtUserName.Location = new System.Drawing.Point(652, 481);
+            this.TxtUserName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.TxtUserName.Name = "TxtUserName";
-            this.TxtUserName.Size = new System.Drawing.Size(179, 29);
+            this.TxtUserName.Size = new System.Drawing.Size(354, 51);
             this.TxtUserName.TabIndex = 2;
             // 
             // label1
@@ -72,9 +76,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(168, 253);
+            this.label1.Location = new System.Drawing.Point(336, 487);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(114, 24);
+            this.label1.Size = new System.Drawing.Size(220, 44);
             this.label1.TabIndex = 3;
             this.label1.Text = "User Name";
             // 
@@ -85,34 +90,36 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(168, 322);
+            this.label2.Location = new System.Drawing.Point(336, 619);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 24);
+            this.label2.Size = new System.Drawing.Size(193, 44);
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(261, 45);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(540, 79);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 161);
+            this.pictureBox1.Size = new System.Drawing.Size(483, 315);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(746, 526);
+            this.ClientSize = new System.Drawing.Size(1492, 1012);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TxtUserName);
             this.Controls.Add(this.TxtPassword);
             this.Controls.Add(this.BtnLogIn);
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Login";
             this.Text = "Login Screen ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

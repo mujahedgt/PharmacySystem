@@ -57,9 +57,9 @@ namespace PharmacySystem
             SearchChkBox.Items.Clear();
             foreach (Medicine item in SerchResult)
             {
-                string itm = $"{item.Id} {item.BrandName} {item.ScientificName} {item.Dose}";
                 if (item.NumberInStore > 0)
                 {
+                    string itm = $"{item.Id} {item.BrandName} {item.ScientificName} {item.Dose}";
                     SearchChkBox.Items.Add(itm);
                 }
             }
@@ -69,29 +69,26 @@ namespace PharmacySystem
             string[] Arr = SearchChkBox.SelectedItem.ToString().Split(' ');
             int id = int.Parse(Arr[0]);
             bool exest =false;
+            Medicine target = new Medicine();
             foreach(Medicine itm in BoxAdd)
             {
                 if(itm.Id == id)
                 {
+                    target= itm;
                     exest = true;
                 }
             }
-            if(!exest)
-            foreach (Medicine item in SerchResult)
+            if (!exest)
             {
-                if (item.Id == id)
-                {
-                    BoxAdd.Add(item);
-                    item.NumberInStore--;
-                    AddChekBox.Items.Add($"{item.Id} {item.BrandName} {item.ScientificName} {item.Dose}");
-                    SerchAdd();
-                    break;
-                }
+                BoxAdd.Add(target);
+                target.NumberInStore--;
+                AddChekBox.Items.Add($"{target.Id} {target.BrandName} {target.ScientificName} {target.Dose}");
+                SerchAdd();
             }
+            
         }
         void Remov()
         {
-            int index = AddChekBox.SelectedIndex;
             string[] Arr = AddChekBox.SelectedItem.ToString().Split(' ');
             int id = int.Parse(Arr[0]);
             bool exest = false;
