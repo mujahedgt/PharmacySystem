@@ -93,7 +93,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::PharmacySystem.Properties.Resources.whrite_naton_in_image_for_a_logo_upscaled;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(261, 45);
             this.pictureBox1.Name = "pictureBox1";
