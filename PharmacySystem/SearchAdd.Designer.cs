@@ -28,86 +28,111 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.SearchBar = new System.Windows.Forms.ComboBox();
+            this.Proceed = new System.Windows.Forms.Button();
+            this.BrandNameSerch = new System.Windows.Forms.RadioButton();
+            this.ScientificSerch = new System.Windows.Forms.RadioButton();
+            this.SearchChkBox = new System.Windows.Forms.ListBox();
+            this.AddChekBox = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // SearchBar
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(177, 14);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(414, 33);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "Search";
+            this.SearchBar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchBar.FormattingEnabled = true;
+            this.SearchBar.Location = new System.Drawing.Point(332, 14);
+            this.SearchBar.Name = "SearchBar";
+            this.SearchBar.Size = new System.Drawing.Size(414, 33);
+            this.SearchBar.TabIndex = 0;
+            this.SearchBar.Text = "Search";
+            this.SearchBar.SelectedIndexChanged += new System.EventHandler(this.SearchBar_SelectedIndexChanged);
             // 
-            // listBox1
+            // Proceed
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(156, 58);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(472, 229);
-            this.listBox1.TabIndex = 1;
+            this.Proceed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Proceed.Location = new System.Drawing.Point(332, 349);
+            this.Proceed.Name = "Proceed";
+            this.Proceed.Size = new System.Drawing.Size(170, 69);
+            this.Proceed.TabIndex = 3;
+            this.Proceed.Text = "Proceed";
+            this.Proceed.UseVisualStyleBackColor = true;
+            this.Proceed.Click += new System.EventHandler(this.Proceed_Click);
             // 
-            // button1
+            // BrandNameSerch
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(252, 293);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Delete";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BrandNameSerch.AutoSize = true;
+            this.BrandNameSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BrandNameSerch.Location = new System.Drawing.Point(200, 19);
+            this.BrandNameSerch.Name = "BrandNameSerch";
+            this.BrandNameSerch.Size = new System.Drawing.Size(127, 24);
+            this.BrandNameSerch.TabIndex = 7;
+            this.BrandNameSerch.TabStop = true;
+            this.BrandNameSerch.Text = "Brand Serch";
+            this.BrandNameSerch.UseVisualStyleBackColor = true;
+            this.BrandNameSerch.CheckedChanged += new System.EventHandler(this.BrandNameSerch_CheckedChanged);
             // 
-            // button2
+            // ScientificSerch
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(384, 293);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 41);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Proceed";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ScientificSerch.AutoSize = true;
+            this.ScientificSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ScientificSerch.Location = new System.Drawing.Point(39, 19);
+            this.ScientificSerch.Name = "ScientificSerch";
+            this.ScientificSerch.Size = new System.Drawing.Size(153, 24);
+            this.ScientificSerch.TabIndex = 8;
+            this.ScientificSerch.TabStop = true;
+            this.ScientificSerch.Text = "Scientific Serch";
+            this.ScientificSerch.UseVisualStyleBackColor = true;
+            this.ScientificSerch.CheckedChanged += new System.EventHandler(this.ScientificSerch_CheckedChanged);
             // 
-            // button3
+            // SearchChkBox
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(308, 362);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(160, 45);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Log Out";
-            this.button3.UseVisualStyleBackColor = true;
+            this.SearchChkBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SearchChkBox.FormattingEnabled = true;
+            this.SearchChkBox.ItemHeight = 25;
+            this.SearchChkBox.Location = new System.Drawing.Point(12, 53);
+            this.SearchChkBox.Name = "SearchChkBox";
+            this.SearchChkBox.Size = new System.Drawing.Size(480, 279);
+            this.SearchChkBox.TabIndex = 9;
+            this.SearchChkBox.SelectedIndexChanged += new System.EventHandler(this.SearchChkBox_SelectedIndexChanged);
+            // 
+            // AddChekBox
+            // 
+            this.AddChekBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddChekBox.FormattingEnabled = true;
+            this.AddChekBox.ItemHeight = 25;
+            this.AddChekBox.Location = new System.Drawing.Point(499, 53);
+            this.AddChekBox.Name = "AddChekBox";
+            this.AddChekBox.Size = new System.Drawing.Size(302, 279);
+            this.AddChekBox.TabIndex = 10;
+            this.AddChekBox.SelectedIndexChanged += new System.EventHandler(this.AddChekBox_SelectedIndexChanged);
             // 
             // SearchAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.AddChekBox);
+            this.Controls.Add(this.SearchChkBox);
+            this.Controls.Add(this.ScientificSerch);
+            this.Controls.Add(this.BrandNameSerch);
+            this.Controls.Add(this.Proceed);
+            this.Controls.Add(this.SearchBar);
             this.Name = "SearchAdd";
             this.Text = "search and add screen";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SearchAdd_FormClosed);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ComboBox SearchBar;
+        private System.Windows.Forms.Button Proceed;
+        private System.Windows.Forms.RadioButton BrandNameSerch;
+        private System.Windows.Forms.RadioButton ScientificSerch;
+        private System.Windows.Forms.ListBox SearchChkBox;
+        private System.Windows.Forms.ListBox AddChekBox;
     }
 }
 

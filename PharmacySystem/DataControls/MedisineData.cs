@@ -18,6 +18,15 @@ namespace PharmacySystem.DataControls
             SqlConnection con = new SqlConnection(str);
             return con;
         }
+        public static void UpDateNumber(int Id, int NewNumber)
+        {
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand($"UPDATE medicine SET NumberInStore = {NewNumber} WHERE id={Id};", con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
         public static List<Medicine> ScientificResearch(string Name)
         {
             List<Medicine> list = new List<Medicine>();

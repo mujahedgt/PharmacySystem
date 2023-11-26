@@ -67,5 +67,22 @@ namespace PharmacySystem.DataControls
             cmd.ExecuteNonQuery();
             con.Close();
         }
+        static public User GetUser(int Id)
+        {
+            User user = null;
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand($"select * from users where id={Id}", con);
+            con.Open();
+            SqlDataReader rdr = cmd.ExecuteReader();
+            if (rdr.Read())
+            {
+                user = new User();
+                user.Id = rdr.GetInt32(0);
+                user.Name = rdr.GetString(1);
+                user.IsAdmin = rdr.GetBoolean(3);
+            }
+            con.Close();
+            return user;
+        }
     }
 }

@@ -31,13 +31,17 @@ namespace PharmacySystem
                 User m = UserData.IsUserExist(TxtUserName.Text, TxtPassword.Text);
                 if(m != null)
                 {
+                    TxtPassword.Text = "";
+                    TxtUserName.Text = "";
                     if (m.IsAdmin)
                     {
-                        MessageBox.Show("Hello Admin " + m.Name);
+                        SearchAdd searchAdd = new SearchAdd(m);
+                        searchAdd.Show();
                     }
                     else
                     {
-                        MessageBox.Show("Hello " + m.Name);
+                        SearchAdd searchAdd = new SearchAdd(m);
+                        searchAdd.Show();
                     }
                     //Button button = new Button();
                     //button.Name = m.Name;
@@ -58,6 +62,7 @@ namespace PharmacySystem
                     //    MessageBox.Show("fuk you");
                     //};
                     //Controls.Add(button);
+                    this.Hide();
                 }
                 else
                 {
