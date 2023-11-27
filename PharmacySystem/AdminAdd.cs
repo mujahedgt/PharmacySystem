@@ -75,5 +75,10 @@ namespace WindowsFormsApp2
         {
             // it will display the final name 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

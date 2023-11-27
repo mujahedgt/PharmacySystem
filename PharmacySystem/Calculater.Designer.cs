@@ -165,7 +165,7 @@
             this.DiscontPersunt.Name = "DiscontPersunt";
             this.DiscontPersunt.Size = new System.Drawing.Size(155, 79);
             this.DiscontPersunt.TabIndex = 10;
-            this.DiscontPersunt.Text = "discount %";
+            this.DiscontPersunt.Text = "Discount %";
             this.DiscontPersunt.UseVisualStyleBackColor = true;
             this.DiscontPersunt.Click += new System.EventHandler(this.DiscontPersunt_Click);
             // 
@@ -176,7 +176,7 @@
             this.DiscontMony.Name = "DiscontMony";
             this.DiscontMony.Size = new System.Drawing.Size(155, 79);
             this.DiscontMony.TabIndex = 11;
-            this.DiscontMony.Text = "discount in numbers";
+            this.DiscontMony.Text = "Flat Discount";
             this.DiscontMony.UseVisualStyleBackColor = true;
             this.DiscontMony.Click += new System.EventHandler(this.DiscontMony_Click);
             // 
@@ -224,9 +224,9 @@
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(587, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 30);
+            this.label1.Size = new System.Drawing.Size(67, 30);
             this.label1.TabIndex = 18;
-            this.label1.Text = "Totale";
+            this.label1.Text = "Total";
             // 
             // label2
             // 
@@ -234,9 +234,9 @@
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(587, 109);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 30);
+            this.label2.Size = new System.Drawing.Size(98, 30);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Discont";
+            this.label2.Text = "Discount";
             // 
             // Calculater
             // 
