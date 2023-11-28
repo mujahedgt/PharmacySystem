@@ -126,6 +126,11 @@ namespace PharmacySystem
             if (f != null) f.Show();
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // information about the drug spicificly the posistion 
+        }
+
         private void AddChekBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if(AddChekBox.SelectedItem != null)

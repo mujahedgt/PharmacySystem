@@ -34,6 +34,7 @@
             this.ScientificSerch = new System.Windows.Forms.RadioButton();
             this.SearchChkBox = new System.Windows.Forms.ListBox();
             this.AddChekBox = new System.Windows.Forms.ListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // SearchBar
@@ -91,7 +92,7 @@
             this.SearchChkBox.ItemHeight = 25;
             this.SearchChkBox.Location = new System.Drawing.Point(12, 53);
             this.SearchChkBox.Name = "SearchChkBox";
-            this.SearchChkBox.Size = new System.Drawing.Size(387, 279);
+            this.SearchChkBox.Size = new System.Drawing.Size(387, 254);
             this.SearchChkBox.TabIndex = 9;
             this.SearchChkBox.SelectedIndexChanged += new System.EventHandler(this.SearchChkBox_SelectedIndexChanged);
             // 
@@ -102,15 +103,25 @@
             this.AddChekBox.ItemHeight = 25;
             this.AddChekBox.Location = new System.Drawing.Point(405, 53);
             this.AddChekBox.Name = "AddChekBox";
-            this.AddChekBox.Size = new System.Drawing.Size(396, 279);
+            this.AddChekBox.Size = new System.Drawing.Size(396, 129);
             this.AddChekBox.TabIndex = 10;
             this.AddChekBox.SelectedIndexChanged += new System.EventHandler(this.AddChekBox_SelectedIndexChanged);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(405, 186);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(396, 121);
+            this.listBox1.TabIndex = 11;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // SearchAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.AddChekBox);
             this.Controls.Add(this.SearchChkBox);
             this.Controls.Add(this.ScientificSerch);
@@ -133,6 +144,7 @@
         private System.Windows.Forms.RadioButton ScientificSerch;
         private System.Windows.Forms.ListBox SearchChkBox;
         private System.Windows.Forms.ListBox AddChekBox;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 
