@@ -58,12 +58,6 @@
     <Compile Include="DataControls\MedisineData.cs" />
     <Compile Include="DataControls\TransactionData.cs" />
     <Compile Include="DataControls\UserData.cs" />
-    <Compile Include="drug_remove.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="drug_remove.Designer.cs">
-      <DependentUpon>drug_remove.cs</DependentUpon>
-    </Compile>
     <Compile Include="history.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,9 +92,6 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="drug_remove.resx">
-      <DependentUpon>drug_remove.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="history.resx">
       <DependentUpon>history.cs</DependentUpon>
