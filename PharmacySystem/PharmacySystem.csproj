@@ -58,6 +58,12 @@
     <Compile Include="DataControls\MedisineData.cs" />
     <Compile Include="DataControls\TransactionData.cs" />
     <Compile Include="DataControls\UserData.cs" />
+    <Compile Include="users_control.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users_control.Designer.cs">
+      <DependentUpon>users_control.cs</DependentUpon>
+    </Compile>
     <Compile Include="history.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminAdd.resx">
       <DependentUpon>AdminAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users_control.resx">
+      <DependentUpon>users_control.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
