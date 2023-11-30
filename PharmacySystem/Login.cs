@@ -35,33 +35,14 @@ namespace PharmacySystem
                     TxtUserName.Text = "";
                     if (m.IsAdmin)
                     {
-                        SearchAdd searchAdd = new SearchAdd(m);
-                        searchAdd.Show();
+                        Admin admin = new Admin(m);
+                        admin.Show();
                     }
                     else
                     {
                         SearchAdd searchAdd = new SearchAdd(m);
                         searchAdd.Show();
                     }
-                    //Button button = new Button();
-                    //button.Name = m.Name;
-                    //button.Size = new Size(100, 50);
-                    //button.Location = new Point(0, 0);
-                    //button.Click += (object sender1, EventArgs ev) =>
-                    //{
-                    //    //you can use your variables inside event
-                    //    MessageBox.Show("mujahed");
-                    //};
-                    //Controls.Add(button);
-                    //button.Name = m.Name+1;
-                    //button.Size = new Size(100, 50);
-                    //button.Location = new Point(0, 60);
-                    //button.Click += (object sender1, EventArgs ev) =>
-                    //{
-                    //    //you can use your variables inside event
-                    //    MessageBox.Show("fuk you");
-                    //};
-                    //Controls.Add(button);
                     this.Hide();
                 }
                 else

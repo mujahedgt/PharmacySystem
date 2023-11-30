@@ -116,7 +116,6 @@
             this.drug_information.Name = "drug_information";
             this.drug_information.Size = new System.Drawing.Size(396, 124);
             this.drug_information.TabIndex = 11;
-            this.drug_information.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // SearchAdd
             // 

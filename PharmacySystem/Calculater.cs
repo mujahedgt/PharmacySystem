@@ -63,7 +63,19 @@ namespace PharmacySystem
         private void lts_drug_collection_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (lts_drug_collection.SelectedItem != null)
-                Remov();
+            {
+
+                string message = "Do you wont to delete these druge from the list?";
+                string caption = "Delet";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                if (result == DialogResult.Yes)
+                {
+                    Remov();
+                }
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

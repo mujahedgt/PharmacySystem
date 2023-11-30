@@ -64,6 +64,25 @@ namespace PharmacySystem
                 }
             }
         }
+        void Detals(Medicine target)
+        {
+            drug_information.Items.Clear();
+            drug_information.Items.Add($"Drug posetion Row:{target.RCPoint.X} ,  Colmin:{target.RCPoint.Y}");
+            drug_information.Items.Add($"Drug Brand Name : {target.BrandName} ,Scientific Name: {target.ScientificName}");
+            drug_information.Items.Add($"Drug Dose :{target.Dose} ,Prise : {target.Price}jd");
+            drug_information.Items.Add($"Drug number in store :{target.NumberInStore} , Form:{target.Type}");
+        }
+        Medicine medicine(int id)
+        {
+            foreach (Medicine item in SerchResult)
+            {
+                if (item.Id == id)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
         private void SearchChkBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             string[] Arr = SearchChkBox.SelectedItem.ToString().Split(' ');
@@ -80,12 +99,13 @@ namespace PharmacySystem
             }
             if (!exest)
             {
+                target = medicine(id);
                 BoxAdd.Add(target);
                 target.NumberInStore--;
                 AddChekBox.Items.Add($"{target.Id} {target.BrandName} {target.ScientificName} {target.Dose}");
                 SerchAdd();
             }
-            
+            Detals(target);
         }
         void Remov()
         {
@@ -125,18 +145,23 @@ namespace PharmacySystem
             Login f = Application.OpenForms.OfType<Login>().FirstOrDefault();
             if (f != null) f.Show();
         }
-
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // information about the drug spicificly the posistion 
-        }
-
         private void AddChekBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(AddChekBox.SelectedItem != null)
-                Remov();
-        }
+            if (AddChekBox.SelectedItem != null)
+            {
 
+                string message = "Do you wont to delete these druge from the list?";
+                string caption = "Delet";
+                MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+                DialogResult result;
+                // Displays the MessageBox.
+                result = MessageBox.Show(message, caption, buttons);
+                if(result == DialogResult.Yes)
+                {
+                    Remov();
+                }
+            }
+        }
         public SearchAdd(User user)
         {
             InitializeComponent();

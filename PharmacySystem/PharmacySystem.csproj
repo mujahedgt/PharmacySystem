@@ -52,6 +52,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminAdd.Designer.cs">
+      <DependentUpon>AdminAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Classes\Medicine.cs" />
     <Compile Include="Classes\Transaction.cs" />
     <Compile Include="Classes\User.cs" />
@@ -89,14 +95,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AdminAdd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdminAdd.Designer.cs">
-      <DependentUpon>AdminAdd.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminAdd.resx">
+      <DependentUpon>AdminAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="history.resx">
       <DependentUpon>history.cs</DependentUpon>
@@ -114,9 +117,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AdminAdd.resx">
-      <DependentUpon>AdminAdd.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

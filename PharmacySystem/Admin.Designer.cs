@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.notification_list = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnSearchAdd = new System.Windows.Forms.Button();
+            this.BtnAddDrug = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.BtnHistory = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,23 +48,25 @@
             this.notification_list.Size = new System.Drawing.Size(177, 196);
             this.notification_list.TabIndex = 0;
             // 
-            // button1
+            // BtnSearchAdd
             // 
-            this.button1.Location = new System.Drawing.Point(516, 29);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 108);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Search For Drug";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnSearchAdd.Location = new System.Drawing.Point(516, 29);
+            this.BtnSearchAdd.Name = "BtnSearchAdd";
+            this.BtnSearchAdd.Size = new System.Drawing.Size(122, 108);
+            this.BtnSearchAdd.TabIndex = 1;
+            this.BtnSearchAdd.Text = "Search For Drug";
+            this.BtnSearchAdd.UseVisualStyleBackColor = true;
+            this.BtnSearchAdd.Click += new System.EventHandler(this.BtnSearchAdd_Click);
             // 
-            // button2
+            // BtnAddDrug
             // 
-            this.button2.Location = new System.Drawing.Point(516, 143);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 108);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add a Drug";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnAddDrug.Location = new System.Drawing.Point(516, 143);
+            this.BtnAddDrug.Name = "BtnAddDrug";
+            this.BtnAddDrug.Size = new System.Drawing.Size(122, 108);
+            this.BtnAddDrug.TabIndex = 2;
+            this.BtnAddDrug.Text = "Add a Drug";
+            this.BtnAddDrug.UseVisualStyleBackColor = true;
+            this.BtnAddDrug.Click += new System.EventHandler(this.BtnAddDrug_Click);
             // 
             // button3
             // 
@@ -75,14 +77,15 @@
             this.button3.Text = "Users control";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // BtnHistory
             // 
-            this.button4.Location = new System.Drawing.Point(360, 29);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 108);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "the history";
-            this.button4.UseVisualStyleBackColor = true;
+            this.BtnHistory.Location = new System.Drawing.Point(360, 29);
+            this.BtnHistory.Name = "BtnHistory";
+            this.BtnHistory.Size = new System.Drawing.Size(122, 108);
+            this.BtnHistory.TabIndex = 4;
+            this.BtnHistory.Text = "the history";
+            this.BtnHistory.UseVisualStyleBackColor = true;
+            this.BtnHistory.Click += new System.EventHandler(this.BtnHistory_Click);
             // 
             // button5
             // 
@@ -121,14 +124,15 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.BtnHistory);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnAddDrug);
+            this.Controls.Add(this.BtnSearchAdd);
             this.Controls.Add(this.notification_list);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Admin";
             this.Text = "Admin";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Admin_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,10 +141,10 @@
         #endregion
 
         private System.Windows.Forms.ListBox notification_list;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnSearchAdd;
+        private System.Windows.Forms.Button BtnAddDrug;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button BtnHistory;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
