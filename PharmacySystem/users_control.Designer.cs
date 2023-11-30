@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // users_list
@@ -52,7 +53,7 @@
             // 
             this.ScientificSerch.AutoSize = true;
             this.ScientificSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScientificSerch.Location = new System.Drawing.Point(383, 150);
+            this.ScientificSerch.Location = new System.Drawing.Point(480, 150);
             this.ScientificSerch.Name = "ScientificSerch";
             this.ScientificSerch.Size = new System.Drawing.Size(103, 24);
             this.ScientificSerch.TabIndex = 17;
@@ -64,7 +65,7 @@
             // 
             this.BrandNameSerch.AutoSize = true;
             this.BrandNameSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrandNameSerch.Location = new System.Drawing.Point(565, 150);
+            this.BrandNameSerch.Location = new System.Drawing.Point(619, 150);
             this.BrandNameSerch.Name = "BrandNameSerch";
             this.BrandNameSerch.Size = new System.Drawing.Size(75, 24);
             this.BrandNameSerch.TabIndex = 16;
@@ -121,11 +122,23 @@
             this.textBox2.TabIndex = 23;
             this.textBox2.Text = "user name";
             // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Red;
+            this.button2.Location = new System.Drawing.Point(366, 144);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(84, 37);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "delete";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // users_control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(707, 430);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
@@ -151,5 +164,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button button2;
     }
 }
