@@ -34,6 +34,7 @@
             this.ScientificSerch = new System.Windows.Forms.RadioButton();
             this.SearchChkBox = new System.Windows.Forms.ListBox();
             this.AddChekBox = new System.Windows.Forms.ListBox();
+            this.drug_information = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // SearchBar
@@ -91,7 +92,7 @@
             this.SearchChkBox.ItemHeight = 25;
             this.SearchChkBox.Location = new System.Drawing.Point(12, 53);
             this.SearchChkBox.Name = "SearchChkBox";
-            this.SearchChkBox.Size = new System.Drawing.Size(387, 279);
+            this.SearchChkBox.Size = new System.Drawing.Size(387, 254);
             this.SearchChkBox.TabIndex = 9;
             this.SearchChkBox.SelectedIndexChanged += new System.EventHandler(this.SearchChkBox_SelectedIndexChanged);
             // 
@@ -102,15 +103,27 @@
             this.AddChekBox.ItemHeight = 25;
             this.AddChekBox.Location = new System.Drawing.Point(405, 53);
             this.AddChekBox.Name = "AddChekBox";
-            this.AddChekBox.Size = new System.Drawing.Size(396, 279);
+            this.AddChekBox.Size = new System.Drawing.Size(396, 129);
             this.AddChekBox.TabIndex = 10;
             this.AddChekBox.SelectedIndexChanged += new System.EventHandler(this.AddChekBox_SelectedIndexChanged);
+            // 
+            // drug_information
+            // 
+            this.drug_information.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.drug_information.FormattingEnabled = true;
+            this.drug_information.ItemHeight = 20;
+            this.drug_information.Location = new System.Drawing.Point(405, 183);
+            this.drug_information.Name = "drug_information";
+            this.drug_information.Size = new System.Drawing.Size(396, 124);
+            this.drug_information.TabIndex = 11;
+            this.drug_information.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // SearchAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(811, 450);
+            this.Controls.Add(this.drug_information);
             this.Controls.Add(this.AddChekBox);
             this.Controls.Add(this.SearchChkBox);
             this.Controls.Add(this.ScientificSerch);
@@ -133,6 +146,7 @@
         private System.Windows.Forms.RadioButton ScientificSerch;
         private System.Windows.Forms.ListBox SearchChkBox;
         private System.Windows.Forms.ListBox AddChekBox;
+        private System.Windows.Forms.ListBox drug_information;
     }
 }
 

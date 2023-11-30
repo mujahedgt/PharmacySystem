@@ -193,7 +193,7 @@
             this.lts_drug_collection.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lts_drug_collection.FormattingEnabled = true;
             this.lts_drug_collection.ItemHeight = 30;
-            this.lts_drug_collection.Location = new System.Drawing.Point(12, 37);
+            this.lts_drug_collection.Location = new System.Drawing.Point(12, 45);
             this.lts_drug_collection.Name = "lts_drug_collection";
             this.lts_drug_collection.Size = new System.Drawing.Size(259, 304);
             this.lts_drug_collection.TabIndex = 14;
@@ -242,7 +242,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(795, 442);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_the_final_price);

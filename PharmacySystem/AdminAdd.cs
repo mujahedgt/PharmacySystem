@@ -80,5 +80,14 @@ namespace WindowsFormsApp2
         {
 
         }
+
+        private void comboBox2_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            // this will only appear if the admin chose "remove/hide drug" 
+            //and it for search for delete/hide a drug 
+            // the text result will appear in the same one that we use for the final result in adding situation
+            // let the search be for the final name and dont make room for guessing
+            // change the button add in the bottom to delete/hide 
+        }
     }
 }
