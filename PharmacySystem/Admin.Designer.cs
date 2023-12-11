@@ -31,7 +31,7 @@
             this.notification_list = new System.Windows.Forms.ListBox();
             this.BtnSearchAdd = new System.Windows.Forms.Button();
             this.BtnAddDrug = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnUserControle = new System.Windows.Forms.Button();
             this.BtnHistory = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -68,14 +68,15 @@
             this.BtnAddDrug.UseVisualStyleBackColor = true;
             this.BtnAddDrug.Click += new System.EventHandler(this.BtnAddDrug_Click);
             // 
-            // button3
+            // BtnUserControle
             // 
-            this.button3.Location = new System.Drawing.Point(516, 257);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 108);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Users control";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnUserControle.Location = new System.Drawing.Point(516, 257);
+            this.BtnUserControle.Name = "BtnUserControle";
+            this.BtnUserControle.Size = new System.Drawing.Size(122, 108);
+            this.BtnUserControle.TabIndex = 3;
+            this.BtnUserControle.Text = "Users control";
+            this.BtnUserControle.UseVisualStyleBackColor = true;
+            this.BtnUserControle.Click += new System.EventHandler(this.BtnUserControle_Click);
             // 
             // BtnHistory
             // 
@@ -125,7 +126,7 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.BtnHistory);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.BtnUserControle);
             this.Controls.Add(this.BtnAddDrug);
             this.Controls.Add(this.BtnSearchAdd);
             this.Controls.Add(this.notification_list);
@@ -143,7 +144,7 @@
         private System.Windows.Forms.ListBox notification_list;
         private System.Windows.Forms.Button BtnSearchAdd;
         private System.Windows.Forms.Button BtnAddDrug;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnUserControle;
         private System.Windows.Forms.Button BtnHistory;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;

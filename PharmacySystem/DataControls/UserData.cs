@@ -17,6 +17,44 @@ namespace PharmacySystem.DataControls
             SqlConnection con = new SqlConnection(str);
             return con;
         }
+        static public List<User> AdminList()
+        {
+            List<User> users = new List<User>();
+            User user = null;
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand($"select * from users where isAdmin=1", con);
+            con.Open();
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                user = new User();
+                user.Id = rdr.GetInt32(0);
+                user.Name = rdr.GetString(1);
+                user.IsAdmin = rdr.GetBoolean(3);
+                users.Add(user);
+            }
+            con.Close();
+            return users;
+        }
+        static public List<User> EmployList()
+        {
+            List<User> users = new List<User>();
+            User user = null;
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand($"select * from users where isAdmin=0", con);
+            con.Open();
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                user = new User();
+                user.Id = rdr.GetInt32(0);
+                user.Name = rdr.GetString(1);
+                user.IsAdmin = rdr.GetBoolean(3);
+                users.Add(user);
+            }
+            con.Close();
+            return users;
+        }
         static public User IsUserExist(string UserName,string Password)
         {
             User user = null;

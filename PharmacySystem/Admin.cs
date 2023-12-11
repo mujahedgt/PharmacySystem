@@ -51,5 +51,11 @@ namespace PharmacySystem
             Login f = Application.OpenForms.OfType<Login>().FirstOrDefault();
             if (f != null) f.Show();
         }
+
+        private void BtnUserControle_Click(object sender, EventArgs e)
+        {
+            users_control userControl = new users_control();
+            userControl.Show();
+        }
     }
 }
