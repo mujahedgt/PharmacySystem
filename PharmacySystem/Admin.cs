@@ -57,5 +57,10 @@ namespace PharmacySystem
             users_control userControl = new users_control();
             userControl.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

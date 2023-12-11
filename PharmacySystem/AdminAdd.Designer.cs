@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.ScientificSerch = new System.Windows.Forms.RadioButton();
-            this.BrandNameSerch = new System.Windows.Forms.RadioButton();
             this.TxtOutbot = new System.Windows.Forms.TextBox();
             this.TxtNumberOfBoxes = new System.Windows.Forms.TextBox();
             this.BtnTest = new System.Windows.Forms.Button();
@@ -47,50 +44,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(270, 78);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(278, 21);
-            this.comboBox2.TabIndex = 29;
-            // 
-            // ScientificSerch
-            // 
-            this.ScientificSerch.AutoSize = true;
-            this.ScientificSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScientificSerch.Location = new System.Drawing.Point(270, 31);
-            this.ScientificSerch.Name = "ScientificSerch";
-            this.ScientificSerch.Size = new System.Drawing.Size(100, 24);
-            this.ScientificSerch.TabIndex = 28;
-            this.ScientificSerch.TabStop = true;
-            this.ScientificSerch.Text = "Add drug";
-            this.ScientificSerch.UseVisualStyleBackColor = true;
-            // 
-            // BrandNameSerch
-            // 
-            this.BrandNameSerch.AutoSize = true;
-            this.BrandNameSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrandNameSerch.Location = new System.Drawing.Point(400, 31);
-            this.BrandNameSerch.Name = "BrandNameSerch";
-            this.BrandNameSerch.Size = new System.Drawing.Size(148, 24);
-            this.BrandNameSerch.TabIndex = 27;
-            this.BrandNameSerch.TabStop = true;
-            this.BrandNameSerch.Text = "Remove a drug";
-            this.BrandNameSerch.UseVisualStyleBackColor = true;
-            // 
             // TxtOutbot
             // 
+            this.TxtOutbot.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.TxtOutbot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtOutbot.Location = new System.Drawing.Point(12, 335);
+            this.TxtOutbot.Location = new System.Drawing.Point(14, 290);
             this.TxtOutbot.Name = "TxtOutbot";
-            this.TxtOutbot.Size = new System.Drawing.Size(776, 31);
+            this.TxtOutbot.Size = new System.Drawing.Size(559, 31);
             this.TxtOutbot.TabIndex = 26;
             // 
             // TxtNumberOfBoxes
             // 
             this.TxtNumberOfBoxes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNumberOfBoxes.Location = new System.Drawing.Point(417, 213);
+            this.TxtNumberOfBoxes.Location = new System.Drawing.Point(300, 123);
             this.TxtNumberOfBoxes.Name = "TxtNumberOfBoxes";
             this.TxtNumberOfBoxes.Size = new System.Drawing.Size(254, 31);
             this.TxtNumberOfBoxes.TabIndex = 25;
@@ -98,8 +64,9 @@
             // 
             // BtnTest
             // 
+            this.BtnTest.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTest.Location = new System.Drawing.Point(270, 387);
+            this.BtnTest.Location = new System.Drawing.Point(122, 327);
             this.BtnTest.Name = "BtnTest";
             this.BtnTest.Size = new System.Drawing.Size(117, 33);
             this.BtnTest.TabIndex = 23;
@@ -110,7 +77,7 @@
             // TxtPrice
             // 
             this.TxtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrice.Location = new System.Drawing.Point(129, 213);
+            this.TxtPrice.Location = new System.Drawing.Point(12, 123);
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(254, 31);
             this.TxtPrice.TabIndex = 22;
@@ -119,7 +86,7 @@
             // TxtSName
             // 
             this.TxtSName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSName.Location = new System.Drawing.Point(417, 114);
+            this.TxtSName.Location = new System.Drawing.Point(300, 24);
             this.TxtSName.Name = "TxtSName";
             this.TxtSName.Size = new System.Drawing.Size(254, 31);
             this.TxtSName.TabIndex = 21;
@@ -128,7 +95,7 @@
             // TxtBName
             // 
             this.TxtBName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBName.Location = new System.Drawing.Point(129, 114);
+            this.TxtBName.Location = new System.Drawing.Point(12, 24);
             this.TxtBName.Name = "TxtBName";
             this.TxtBName.Size = new System.Drawing.Size(254, 31);
             this.TxtBName.TabIndex = 20;
@@ -137,7 +104,7 @@
             // TxtDose
             // 
             this.TxtDose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDose.Location = new System.Drawing.Point(129, 167);
+            this.TxtDose.Location = new System.Drawing.Point(12, 77);
             this.TxtDose.Name = "TxtDose";
             this.TxtDose.Size = new System.Drawing.Size(254, 31);
             this.TxtDose.TabIndex = 19;
@@ -147,7 +114,7 @@
             // 
             this.CmbTypeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbTypeList.FormattingEnabled = true;
-            this.CmbTypeList.Location = new System.Drawing.Point(417, 165);
+            this.CmbTypeList.Location = new System.Drawing.Point(300, 75);
             this.CmbTypeList.Name = "CmbTypeList";
             this.CmbTypeList.Size = new System.Drawing.Size(254, 33);
             this.CmbTypeList.TabIndex = 18;
@@ -155,8 +122,9 @@
             // 
             // BtnAdd
             // 
+            this.BtnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.BtnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAdd.Location = new System.Drawing.Point(431, 387);
+            this.BtnAdd.Location = new System.Drawing.Point(283, 327);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(117, 33);
             this.BtnAdd.TabIndex = 17;
@@ -168,7 +136,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(26, 269);
+            this.label1.Location = new System.Drawing.Point(12, 194);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 30;
@@ -178,7 +146,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(129, 269);
+            this.label2.Location = new System.Drawing.Point(115, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(104, 25);
             this.label2.TabIndex = 31;
@@ -187,7 +155,7 @@
             // TxtColomen
             // 
             this.TxtColomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtColomen.Location = new System.Drawing.Point(239, 266);
+            this.TxtColomen.Location = new System.Drawing.Point(225, 191);
             this.TxtColomen.Name = "TxtColomen";
             this.TxtColomen.Size = new System.Drawing.Size(54, 31);
             this.TxtColomen.TabIndex = 32;
@@ -195,7 +163,7 @@
             // TxtRow
             // 
             this.TxtRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRow.Location = new System.Drawing.Point(363, 266);
+            this.TxtRow.Location = new System.Drawing.Point(349, 191);
             this.TxtRow.Name = "TxtRow";
             this.TxtRow.Size = new System.Drawing.Size(51, 31);
             this.TxtRow.TabIndex = 34;
@@ -204,7 +172,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(299, 269);
+            this.label3.Location = new System.Drawing.Point(285, 194);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(57, 25);
             this.label3.TabIndex = 33;
@@ -214,15 +182,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(583, 386);
             this.Controls.Add(this.TxtRow);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TxtColomen);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.ScientificSerch);
-            this.Controls.Add(this.BrandNameSerch);
             this.Controls.Add(this.TxtOutbot);
             this.Controls.Add(this.TxtNumberOfBoxes);
             this.Controls.Add(this.BtnTest);
@@ -240,10 +205,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.RadioButton ScientificSerch;
-        private System.Windows.Forms.RadioButton BrandNameSerch;
         private System.Windows.Forms.TextBox TxtOutbot;
         private System.Windows.Forms.TextBox TxtNumberOfBoxes;
         private System.Windows.Forms.Button BtnTest;

@@ -47,6 +47,11 @@ namespace PharmacySystem
             }
         }
 
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         Point RCPoint;
         private void BtnTest_Click(object sender, EventArgs e)
         {

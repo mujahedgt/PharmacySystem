@@ -33,8 +33,6 @@
             this.BtnAddDrug = new System.Windows.Forms.Button();
             this.BtnUserControle = new System.Windows.Forms.Button();
             this.BtnHistory = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -88,24 +86,6 @@
             this.BtnHistory.UseVisualStyleBackColor = true;
             this.BtnHistory.Click += new System.EventHandler(this.BtnHistory_Click);
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(360, 143);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(122, 108);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(360, 257);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 108);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -123,8 +103,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(698, 389);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.BtnHistory);
             this.Controls.Add(this.BtnUserControle);
             this.Controls.Add(this.BtnAddDrug);
@@ -146,8 +124,6 @@
         private System.Windows.Forms.Button BtnAddDrug;
         private System.Windows.Forms.Button BtnUserControle;
         private System.Windows.Forms.Button BtnHistory;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label1;
     }
 }
