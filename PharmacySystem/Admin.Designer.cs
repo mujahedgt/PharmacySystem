@@ -48,7 +48,7 @@
             // 
             // BtnSearchAdd
             // 
-            this.BtnSearchAdd.Location = new System.Drawing.Point(516, 29);
+            this.BtnSearchAdd.Location = new System.Drawing.Point(552, 75);
             this.BtnSearchAdd.Name = "BtnSearchAdd";
             this.BtnSearchAdd.Size = new System.Drawing.Size(122, 108);
             this.BtnSearchAdd.TabIndex = 1;
@@ -58,7 +58,7 @@
             // 
             // BtnAddDrug
             // 
-            this.BtnAddDrug.Location = new System.Drawing.Point(516, 143);
+            this.BtnAddDrug.Location = new System.Drawing.Point(564, 259);
             this.BtnAddDrug.Name = "BtnAddDrug";
             this.BtnAddDrug.Size = new System.Drawing.Size(122, 108);
             this.BtnAddDrug.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             // BtnUserControle
             // 
-            this.BtnUserControle.Location = new System.Drawing.Point(516, 257);
+            this.BtnUserControle.Location = new System.Drawing.Point(376, 259);
             this.BtnUserControle.Name = "BtnUserControle";
             this.BtnUserControle.Size = new System.Drawing.Size(122, 108);
             this.BtnUserControle.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             // BtnHistory
             // 
-            this.BtnHistory.Location = new System.Drawing.Point(360, 29);
+            this.BtnHistory.Location = new System.Drawing.Point(376, 75);
             this.BtnHistory.Name = "BtnHistory";
             this.BtnHistory.Size = new System.Drawing.Size(122, 108);
             this.BtnHistory.TabIndex = 4;
