@@ -60,6 +60,7 @@
             this.ScientificSerch.TabStop = true;
             this.ScientificSerch.Text = "employee";
             this.ScientificSerch.UseVisualStyleBackColor = true;
+            this.ScientificSerch.CheckedChanged += new System.EventHandler(this.ScientificSerch_CheckedChanged);
             // 
             // BrandNameSerch
             // 

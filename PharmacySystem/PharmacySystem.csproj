@@ -124,9 +124,6 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="AdminAdd.resx">
-      <DependentUpon>AdminAdd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="users_control.resx">
       <DependentUpon>users_control.cs</DependentUpon>
     </EmbeddedResource>

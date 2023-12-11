@@ -105,7 +105,7 @@ namespace PharmacySystem.DataControls
         {
             List<Medicine> list = new List<Medicine>();
             SqlConnection con = sqlConnection();
-            SqlCommand cmd = new SqlCommand($"select * from medicine where NumberInStore=0", con);
+            SqlCommand cmd = new SqlCommand($"select * from medicine where NumberInStore<=5", con);
             con.Open();
             SqlDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
@@ -128,7 +128,7 @@ namespace PharmacySystem.DataControls
         {
             List<Medicine> list = new List<Medicine>();
             SqlConnection con = sqlConnection();
-            SqlCommand cmd = new SqlCommand($"select * from medicine where BrandName='{medicine.BrandName}' and ScientificName='{medicine.ScientificName}' and Dose='{medicine.Dose}'  ", con);
+            SqlCommand cmd = new SqlCommand($"select * from medicine where BrandName='{medicine.BrandName}' and ScientificName='{medicine.ScientificName}' and Dose='{medicine.Dose}' and MidType='{medicine.Type}'  ", con);
             con.Open();
             SqlDataReader rdr = cmd.ExecuteReader();
             while (rdr.Read())
@@ -166,6 +166,20 @@ namespace PharmacySystem.DataControls
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+        public static List<string> GetTypes()
+        {
+            List<string> list = new List<string>();
+            SqlConnection con = sqlConnection();
+            SqlCommand cmd = new SqlCommand("SELECT DISTINCT MidType from medicine;", con);
+            con.Open();
+            SqlDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                list.Add(rdr.GetString(0));
+            }
+            con.Close();
+            return list;
         }
     }
 }

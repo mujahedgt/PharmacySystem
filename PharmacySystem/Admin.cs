@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PharmacySystem;
+using PharmacySystem.DataControls;
 namespace PharmacySystem
 {
     public partial class Admin : Form
@@ -18,6 +19,13 @@ namespace PharmacySystem
         {
             this.user = user;
             InitializeComponent();
+            List<Medicine> list = new List<Medicine>();
+            list = MedisineData.EmptyMedicines();
+            notification_list.Items.Add("The Medisine Is oul most empty");
+            foreach (Medicine m in list)
+            {
+                notification_list.Items.Add($"{m.Id} {m.BrandName} {m.Dose} {m.NumberInStore}");
+            }
         }
 
         private void BtnSearchAdd_Click(object sender, EventArgs e)

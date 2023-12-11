@@ -45,7 +45,7 @@
             this.notification_list.ItemHeight = 24;
             this.notification_list.Location = new System.Drawing.Point(12, 75);
             this.notification_list.Name = "notification_list";
-            this.notification_list.Size = new System.Drawing.Size(177, 196);
+            this.notification_list.Size = new System.Drawing.Size(324, 292);
             this.notification_list.TabIndex = 0;
             // 
             // BtnSearchAdd
