@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SearchAdd));
             this.SearchBar = new System.Windows.Forms.ComboBox();
             this.Proceed = new System.Windows.Forms.Button();
             this.BrandNameSerch = new System.Windows.Forms.RadioButton();
@@ -50,39 +51,43 @@
             // 
             // Proceed
             // 
+            this.Proceed.BackColor = System.Drawing.Color.LightGray;
+            this.Proceed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Proceed.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Proceed.Location = new System.Drawing.Point(332, 354);
+            this.Proceed.Location = new System.Drawing.Point(332, 351);
             this.Proceed.Name = "Proceed";
             this.Proceed.Size = new System.Drawing.Size(138, 56);
             this.Proceed.TabIndex = 3;
             this.Proceed.Text = "Proceed";
-            this.Proceed.UseVisualStyleBackColor = true;
+            this.Proceed.UseVisualStyleBackColor = false;
             this.Proceed.Click += new System.EventHandler(this.Proceed_Click);
             // 
             // BrandNameSerch
             // 
             this.BrandNameSerch.AutoSize = true;
+            this.BrandNameSerch.BackColor = System.Drawing.Color.Transparent;
             this.BrandNameSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BrandNameSerch.Location = new System.Drawing.Point(200, 19);
+            this.BrandNameSerch.Location = new System.Drawing.Point(180, 19);
             this.BrandNameSerch.Name = "BrandNameSerch";
             this.BrandNameSerch.Size = new System.Drawing.Size(127, 24);
             this.BrandNameSerch.TabIndex = 7;
             this.BrandNameSerch.TabStop = true;
             this.BrandNameSerch.Text = "Brand Serch";
-            this.BrandNameSerch.UseVisualStyleBackColor = true;
+            this.BrandNameSerch.UseVisualStyleBackColor = false;
             this.BrandNameSerch.CheckedChanged += new System.EventHandler(this.BrandNameSerch_CheckedChanged);
             // 
             // ScientificSerch
             // 
             this.ScientificSerch.AutoSize = true;
+            this.ScientificSerch.BackColor = System.Drawing.Color.Transparent;
             this.ScientificSerch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ScientificSerch.Location = new System.Drawing.Point(39, 19);
+            this.ScientificSerch.Location = new System.Drawing.Point(12, 19);
             this.ScientificSerch.Name = "ScientificSerch";
             this.ScientificSerch.Size = new System.Drawing.Size(153, 24);
             this.ScientificSerch.TabIndex = 8;
             this.ScientificSerch.TabStop = true;
             this.ScientificSerch.Text = "Scientific Serch";
-            this.ScientificSerch.UseVisualStyleBackColor = true;
+            this.ScientificSerch.UseVisualStyleBackColor = false;
             this.ScientificSerch.CheckedChanged += new System.EventHandler(this.ScientificSerch_CheckedChanged);
             // 
             // SearchChkBox
@@ -121,7 +126,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(811, 419);
             this.Controls.Add(this.drug_information);
             this.Controls.Add(this.AddChekBox);
             this.Controls.Add(this.SearchChkBox);

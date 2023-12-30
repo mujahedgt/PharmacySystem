@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAdd));
             this.TxtOutbot = new System.Windows.Forms.TextBox();
             this.TxtNumberOfBoxes = new System.Windows.Forms.TextBox();
             this.BtnTest = new System.Windows.Forms.Button();
@@ -47,16 +48,18 @@
             // TxtOutbot
             // 
             this.TxtOutbot.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.TxtOutbot.BackColor = System.Drawing.SystemColors.MenuBar;
             this.TxtOutbot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtOutbot.Location = new System.Drawing.Point(14, 290);
+            this.TxtOutbot.Location = new System.Drawing.Point(93, 312);
             this.TxtOutbot.Name = "TxtOutbot";
             this.TxtOutbot.Size = new System.Drawing.Size(559, 31);
             this.TxtOutbot.TabIndex = 26;
             // 
             // TxtNumberOfBoxes
             // 
+            this.TxtNumberOfBoxes.BackColor = System.Drawing.SystemColors.MenuBar;
             this.TxtNumberOfBoxes.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNumberOfBoxes.Location = new System.Drawing.Point(300, 123);
+            this.TxtNumberOfBoxes.Location = new System.Drawing.Point(427, 123);
             this.TxtNumberOfBoxes.Name = "TxtNumberOfBoxes";
             this.TxtNumberOfBoxes.Size = new System.Drawing.Size(254, 31);
             this.TxtNumberOfBoxes.TabIndex = 25;
@@ -65,19 +68,21 @@
             // BtnTest
             // 
             this.BtnTest.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnTest.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnTest.Location = new System.Drawing.Point(122, 327);
+            this.BtnTest.Location = new System.Drawing.Point(203, 359);
             this.BtnTest.Name = "BtnTest";
             this.BtnTest.Size = new System.Drawing.Size(117, 33);
             this.BtnTest.TabIndex = 23;
             this.BtnTest.Text = "Test";
-            this.BtnTest.UseVisualStyleBackColor = true;
+            this.BtnTest.UseVisualStyleBackColor = false;
             this.BtnTest.Click += new System.EventHandler(this.BtnTest_Click);
             // 
             // TxtPrice
             // 
+            this.TxtPrice.BackColor = System.Drawing.SystemColors.MenuBar;
             this.TxtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPrice.Location = new System.Drawing.Point(12, 123);
+            this.TxtPrice.Location = new System.Drawing.Point(110, 123);
             this.TxtPrice.Name = "TxtPrice";
             this.TxtPrice.Size = new System.Drawing.Size(254, 31);
             this.TxtPrice.TabIndex = 22;
@@ -85,8 +90,9 @@
             // 
             // TxtSName
             // 
+            this.TxtSName.BackColor = System.Drawing.SystemColors.MenuBar;
             this.TxtSName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSName.Location = new System.Drawing.Point(300, 24);
+            this.TxtSName.Location = new System.Drawing.Point(427, 24);
             this.TxtSName.Name = "TxtSName";
             this.TxtSName.Size = new System.Drawing.Size(254, 31);
             this.TxtSName.TabIndex = 21;
@@ -94,8 +100,9 @@
             // 
             // TxtBName
             // 
+            this.TxtBName.BackColor = System.Drawing.SystemColors.MenuBar;
             this.TxtBName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBName.Location = new System.Drawing.Point(12, 24);
+            this.TxtBName.Location = new System.Drawing.Point(110, 24);
             this.TxtBName.Name = "TxtBName";
             this.TxtBName.Size = new System.Drawing.Size(254, 31);
             this.TxtBName.TabIndex = 20;
@@ -103,8 +110,9 @@
             // 
             // TxtDose
             // 
+            this.TxtDose.BackColor = System.Drawing.SystemColors.MenuBar;
             this.TxtDose.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDose.Location = new System.Drawing.Point(12, 77);
+            this.TxtDose.Location = new System.Drawing.Point(110, 77);
             this.TxtDose.Name = "TxtDose";
             this.TxtDose.Size = new System.Drawing.Size(254, 31);
             this.TxtDose.TabIndex = 19;
@@ -112,9 +120,10 @@
             // 
             // CmbTypeList
             // 
+            this.CmbTypeList.BackColor = System.Drawing.SystemColors.MenuBar;
             this.CmbTypeList.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbTypeList.FormattingEnabled = true;
-            this.CmbTypeList.Location = new System.Drawing.Point(300, 75);
+            this.CmbTypeList.Location = new System.Drawing.Point(427, 75);
             this.CmbTypeList.Name = "CmbTypeList";
             this.CmbTypeList.Size = new System.Drawing.Size(254, 33);
             this.CmbTypeList.TabIndex = 18;
@@ -123,20 +132,22 @@
             // BtnAdd
             // 
             this.BtnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BtnAdd.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.BtnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAdd.Location = new System.Drawing.Point(283, 327);
+            this.BtnAdd.Location = new System.Drawing.Point(449, 359);
             this.BtnAdd.Name = "BtnAdd";
             this.BtnAdd.Size = new System.Drawing.Size(117, 33);
             this.BtnAdd.TabIndex = 17;
             this.BtnAdd.Text = "Add";
-            this.BtnAdd.UseVisualStyleBackColor = true;
+            this.BtnAdd.UseVisualStyleBackColor = false;
             this.BtnAdd.Click += new System.EventHandler(this.BtnAdd_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 194);
+            this.label1.Location = new System.Drawing.Point(336, 199);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 25);
             this.label1.TabIndex = 30;
@@ -145,44 +156,48 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(115, 194);
+            this.label2.Location = new System.Drawing.Point(171, 238);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 25);
+            this.label2.Size = new System.Drawing.Size(79, 25);
             this.label2.TabIndex = 31;
-            this.label2.Text = "Colomen";
+            this.label2.Text = "Closet";
             // 
             // TxtColomen
             // 
-            this.TxtColomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtColomen.Location = new System.Drawing.Point(225, 191);
+            this.TxtColomen.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtColomen.Location = new System.Drawing.Point(286, 237);
             this.TxtColomen.Name = "TxtColomen";
-            this.TxtColomen.Size = new System.Drawing.Size(54, 31);
+            this.TxtColomen.Size = new System.Drawing.Size(78, 26);
             this.TxtColomen.TabIndex = 32;
             // 
             // TxtRow
             // 
-            this.TxtRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtRow.Location = new System.Drawing.Point(349, 191);
+            this.TxtRow.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRow.Location = new System.Drawing.Point(478, 235);
             this.TxtRow.Name = "TxtRow";
-            this.TxtRow.Size = new System.Drawing.Size(51, 31);
+            this.TxtRow.Size = new System.Drawing.Size(78, 26);
             this.TxtRow.TabIndex = 34;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(285, 194);
+            this.label3.Location = new System.Drawing.Point(392, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 25);
+            this.label3.Size = new System.Drawing.Size(66, 25);
             this.label3.TabIndex = 33;
-            this.label3.Text = "Row";
+            this.label3.Text = "Shelf";
             // 
             // AdminAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(583, 386);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(741, 430);
             this.Controls.Add(this.TxtRow);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.TxtColomen);
