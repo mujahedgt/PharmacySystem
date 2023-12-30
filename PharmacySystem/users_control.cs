@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace PharmacySystem
 {
@@ -117,6 +118,46 @@ namespace PharmacySystem
                 }
             }
 
+        }
+
+        private void BtnStateChange_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            int id = int.Parse(users_list.SelectedItem.ToString()[0].ToString());
+            if (RdEmploy.Checked)
+            {
+                foreach (User u in EmployList)
+                {
+                    if (u.Id == id)
+                    {
+                        user = u;
+                        break;
+                    }
+                }
+            }
+            else
+            {
+
+                foreach (User u in AdminList)
+                {
+                    if (u.Id == id)
+                    {
+                        user = u;
+                        break;
+                    }
+                }
+            }
+
+            string message = $"Do you wont to change the posetion of thes employ\nName: {user.Name}\nIs Admin?: {user.IsAdmin} \nThe next postion is admin?: {!user.IsAdmin}";
+            string caption = "Cheng Posetion";
+            MessageBoxButtons buttons = MessageBoxButtons.YesNo;
+            DialogResult result;
+            // Displays the MessageBox.
+            result = MessageBox.Show(message, caption, buttons);
+            if (result == DialogResult.Yes)
+            {
+                UserData.ChangeUserAccess(user.Id, !user.IsAdmin);
+            }
         }
     }
 }

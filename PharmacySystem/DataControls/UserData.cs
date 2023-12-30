@@ -97,10 +97,10 @@ namespace PharmacySystem.DataControls
             cmd.ExecuteNonQuery();
             con.Close();
         }
-        static public void AddAdmin(int Id)
+        static public void ChangeUserAccess(int Id,bool admin)
         {
             SqlConnection con = sqlConnection();
-            SqlCommand cmd = new SqlCommand($"update users set isAdmin=1 where id={Id}", con);
+            SqlCommand cmd = new SqlCommand($"update users set isAdmin={Convert.ToInt32(admin)} where id={Id}", con);
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();

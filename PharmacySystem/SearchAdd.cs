@@ -142,8 +142,17 @@ namespace PharmacySystem
 
         private void SearchAdd_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Login f = Application.OpenForms.OfType<Login>().FirstOrDefault();
-            if (f != null) f.Show();
+            if (user.IsAdmin)
+            {
+                Admin f = Application.OpenForms.OfType<Admin>().FirstOrDefault();
+                if (f != null) f.Show();
+            }
+            else
+            {
+                Login f = Application.OpenForms.OfType<Login>().FirstOrDefault();
+                if (f != null) f.Show();
+            }
+            
         }
         private void AddChekBox_SelectedIndexChanged(object sender, EventArgs e)
         {

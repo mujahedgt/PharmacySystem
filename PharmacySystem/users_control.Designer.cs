@@ -38,8 +38,7 @@
             this.BtnDelete = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.BtnStateChange = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -126,9 +125,9 @@
             // 
             this.BtnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnDelete.ForeColor = System.Drawing.Color.Red;
-            this.BtnDelete.Location = new System.Drawing.Point(166, 286);
+            this.BtnDelete.Location = new System.Drawing.Point(222, 286);
             this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(84, 36);
+            this.BtnDelete.Size = new System.Drawing.Size(123, 36);
             this.BtnDelete.TabIndex = 24;
             this.BtnDelete.Text = "delete";
             this.BtnDelete.UseVisualStyleBackColor = true;
@@ -156,38 +155,27 @@
             this.label3.TabIndex = 26;
             this.label3.Text = "Serch";
             // 
-            // button1
+            // BtnStateChange
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Red;
-            this.button1.Location = new System.Drawing.Point(440, 286);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 36);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Promote Into Addmin ";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Red;
-            this.button2.Location = new System.Drawing.Point(271, 286);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 36);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Demote Into Employee";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnStateChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnStateChange.ForeColor = System.Drawing.Color.Red;
+            this.BtnStateChange.Location = new System.Drawing.Point(366, 286);
+            this.BtnStateChange.Name = "BtnStateChange";
+            this.BtnStateChange.Size = new System.Drawing.Size(185, 36);
+            this.BtnStateChange.TabIndex = 28;
+            this.BtnStateChange.Text = "Demote/Promote user";
+            this.BtnStateChange.UseVisualStyleBackColor = true;
+            this.BtnStateChange.Click += new System.EventHandler(this.BtnStateChange_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label4.Location = new System.Drawing.Point(119, 340);
+            this.label4.Location = new System.Drawing.Point(315, 343);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(531, 13);
+            this.label4.Size = new System.Drawing.Size(122, 13);
             this.label4.TabIndex = 29;
-            this.label4.Text = "مشان عرض النور حط مسج تطلع بخلقة اليوزر لما بده يحذف موظف او يرقي او يخفض رتبة .." +
-    ".. هي كتبت عرض الملاحظة  ";
+            this.label4.Text = "طيب واذا ما عملت هيييييك";
             // 
             // users_control
             // 
@@ -197,8 +185,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(727, 531);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnStateChange);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.BtnDelete);
@@ -228,8 +215,7 @@
         private System.Windows.Forms.Button BtnDelete;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button BtnStateChange;
         private System.Windows.Forms.Label label4;
     }
 }
